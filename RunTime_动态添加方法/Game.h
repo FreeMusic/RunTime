@@ -1,5 +1,5 @@
 //
-//  Sunxy.h
+//  Game.h
 //  RunTime_动态添加方法
 //
 //  Created by mic on 2017/12/25.
@@ -7,10 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <objc/runtime.h>
 
-@interface Sunxy : NSObject
-
-@property (nonatomic, strong) NSString *age;
+@interface Game : NSObject
 
 @end

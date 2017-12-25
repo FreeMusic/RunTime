@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Sunxy.h"
+#import "Game+Category.h"
 
 @interface ViewController ()
 
@@ -19,19 +20,28 @@
     [super viewDidLoad];
     
     Sunxy *sxy = [[Sunxy alloc] init];
-    SEL selector = NSSelectorFromString(@"guess");
+    [sxy setAge:@""];
+    SEL selector = NSSelectorFromString(@"");
     
-    Method method = class_getInstanceMethod([sxy class], selector);
-    class_addMethod([sxy class], selector, (IMP)eat, method_getTypeEncoding(method));
+    //Method method = class_getInstanceMethod([sxy class], selector);
+    //class_addMethod([sxy class], selector, (IMP)eat, method_getTypeEncoding(method));
+    class_addMethod([sxy class], selector, (IMP)eat, "V@:");
     if ([sxy respondsToSelector:selector]) {
         ((void (*)(id, SEL))[sxy methodForSelector:selector])(sxy, selector);
     } else{
-        NSLog(@"Sorry,I don't know");
+        NSLog(@"Sorry,I don't eat");
     }
+    
+    Game *game = [[Game alloc] init];
+    SEL sel = NSSelectorFromString(@"over");
+    //[game performSelector:sel withObject:@"12452"];
+    ((void (*)(id, SEL, NSString *))[game methodForSelector:sel])(game, sel, @"11212");
 }
 void eat(id self,SEL _cmd){
     
-    NSLog(@"sxy eat");
+    Sunxy *sxy = (Sunxy *)self;
+    
+    NSLog(@"sxy eat  %@", sxy.age);
     
 }
 - (void)didReceiveMemoryWarning {

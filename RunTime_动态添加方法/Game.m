@@ -1,18 +1,13 @@
 //
-//  Sunxy.m
+//  Game.m
 //  RunTime_动态添加方法
 //
 //  Created by mic on 2017/12/25.
 //  Copyright © 2017年 JZ. All rights reserved.
 //
 
-#import "Sunxy.h"
+#import "Game.h"
 
-@implementation Sunxy
-
-- (void)setAge:(NSString *)age{
-    age = @"100";
-    _age = age;
-}
+@implementation Game
 
 @end

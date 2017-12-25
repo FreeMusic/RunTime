@@ -16,6 +16,8 @@
 		0574AAD51FF0EBD40002CC41 /* RunTime_______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0574AAD41FF0EBD40002CC41 /* RunTime_______Tests.m */; };
 		0574AAE01FF0EBD40002CC41 /* RunTime_______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0574AADF1FF0EBD40002CC41 /* RunTime_______UITests.m */; };
 		0574AAEF1FF0EC840002CC41 /* Sunxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0574AAEE1FF0EC840002CC41 /* Sunxy.m */; };
+		0574AAF51FF0F8390002CC41 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 0574AAF41FF0F8390002CC41 /* Game.m */; };
+		0574AAF81FF0F84B0002CC41 /* Game+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 0574AAF71FF0F84B0002CC41 /* Game+Category.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		0574AAE11FF0EBD40002CC41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0574AAED1FF0EC840002CC41 /* Sunxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sunxy.h; sourceTree = "<group>"; };
 		0574AAEE1FF0EC840002CC41 /* Sunxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sunxy.m; sourceTree = "<group>"; };
+		0574AAF31FF0F8390002CC41 /* Game.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		0574AAF41FF0F8390002CC41 /* Game.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
+		0574AAF61FF0F84B0002CC41 /* Game+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Game+Category.h"; sourceTree = "<group>"; };
+		0574AAF71FF0F84B0002CC41 /* Game+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Game+Category.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,10 @@
 				0574AABF1FF0EBD40002CC41 /* ViewController.m */,
 				0574AAED1FF0EC840002CC41 /* Sunxy.h */,
 				0574AAEE1FF0EC840002CC41 /* Sunxy.m */,
+				0574AAF31FF0F8390002CC41 /* Game.h */,
+				0574AAF41FF0F8390002CC41 /* Game.m */,
+				0574AAF61FF0F84B0002CC41 /* Game+Category.h */,
+				0574AAF71FF0F84B0002CC41 /* Game+Category.m */,
 				0574AAC11FF0EBD40002CC41 /* Main.storyboard */,
 				0574AAC41FF0EBD40002CC41 /* Assets.xcassets */,
 				0574AAC61FF0EBD40002CC41 /* LaunchScreen.storyboard */,
@@ -270,10 +280,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0574AAF51FF0F8390002CC41 /* Game.m in Sources */,
 				0574AAC01FF0EBD40002CC41 /* ViewController.m in Sources */,
 				0574AAEF1FF0EC840002CC41 /* Sunxy.m in Sources */,
 				0574AACB1FF0EBD40002CC41 /* main.m in Sources */,
 				0574AABD1FF0EBD40002CC41 /* AppDelegate.m in Sources */,
+				0574AAF81FF0F84B0002CC41 /* Game+Category.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
